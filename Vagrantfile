@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network :private_network, ip: conf['vm']['ip_address']
   end
 
-  config.vm.network :forwarded_port, guest: 80, host: conf['server']['port']
+  config.vm.network :forwarded_port, guest: 80, host: conf['vm']['port']
 
   # Configuration Files (i.e. this project).
   config.vm.synced_folder '.', '/conf', nfs: conf['vm']['nfs']

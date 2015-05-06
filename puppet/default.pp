@@ -7,11 +7,6 @@ $www_domain = $server_values['domain'] ? {
   default => $server_values['domain']
 }
 
-$www_port = $server_values['port'] ? {
-  undef   => '9000',
-  default => $server_values['port']
-}
-
 $home_dir     = "/home/${::ssh_username}"
 $puppet_dir   = '/conf/puppet'
 $puppet_files = "${puppet_dir}/files"
