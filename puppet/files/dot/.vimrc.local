@@ -1,0 +1,8 @@
+" Convert tabs to spaces
+set expandtab
+" Make tabs as wide as four spaces
+set tabstop=4
+" Indent 4 spaces
+set shiftwidth=4
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_

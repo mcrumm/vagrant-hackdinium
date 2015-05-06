@@ -1,0 +1,16 @@
+---
+project:      /Users/mike/Code/mcrumm/vindinium-hacklang
+server:
+  domain:     hackdinium.dev
+  port:       '9000'
+  packages:   [ ]
+  vim:
+    plugins:
+      hack:
+        source: https://github.com/hhvm/vim-hack.git
+      nerdtree:
+        source: https://github.com/scrooloose/nerdtree.git
+vm:
+  box:        puphpet/ubuntu1404-x64
+  nfs:        true
+  ip_address: 192.168.50.50
